@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_rigthLayout_top">130dp</dimen>
+    <dimen name="margin_button">50dp</dimen>
+    <dimen name="divider_heigth">30dp</dimen>
+    <dimen name="margin_to_first_view">10dp</dimen>
+    <dimen name="edit_text_dimentios">200dp</dimen>
+    <dimen name="margin_top_first_et">100dp</dimen>
+    <dimen name="margin_left_first_et">100dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="text_size2">12sp</dimen>
+    <dimen name="margin_text">12dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

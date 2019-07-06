@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.diannaliset.vehicles"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def room_version = '2.0.0-rc01'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //CoordinatorLayout
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.0.0"
+    //Room
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:2.1.0-alpha07"
+
+    //LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$room_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$room_version"
+    //lifecycle
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha01"
+    //coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0-beta01'
+
+    kapt "android.arch.lifecycle:compiler:2.1.0-beta01"
+    kapt  "android.arch.persistence.room:compiler:$room_version"
+    kapt "android.arch.lifecycle:extensions:$room_version"
+}

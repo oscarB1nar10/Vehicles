@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="list_view_color">#b5fa7500</color>
+    <color name="text_of_alert">#6fcc3920</color>
+
+    <!-- tool bar color -->
+    <color name="toolbar_color">#C2BFBF</color>
+    <!-- RecyclerView item color -->
+    <color name="recycler_item_color">#68555454</color>
+    <color name="recycler_text_color">#FFFFFF</color>
+    <!-- ShowVehicle2 text box outline -->
+    <color name="text_outline">#6F6161</color>
+    <color name="black">#000000</color>
+
+</resources>

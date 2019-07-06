@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Vehicles</string>
+    <string name="register_button_text">Registrar</string>
+    <string name="title_activity_base">BaseActivity</string>
+    //BaseActivity
+    <string name="toolbar_title_one">Vehiculos</string>
+    //MainActivityVehiclesList
+    <string name="vehicles_list_title">LISTA DE VEHICULOS REGISTRADOS</string>
+    //ShowVehicle2
+    <string name="plaque">Placa</string>
+    <string name="brand">Marca</string>
+    <string name="model">Modelo</string>
+    <string name="number_of_doors">Numero puertas</string>
+    <string name="type_of_vehicle">Tipo Vehiculo</string>
+
+</resources>
