@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.diannaliset.vehicles.R
-import com.example.diannaliset.vehicles.ShowVehicle
 import com.example.diannaliset.vehicles.activities.a.mainActivityVehicleList.model.VehicleDataClass
 import com.example.diannaliset.vehicles.activities.a.showVehicle.ShowVehicle2
 import kotlinx.android.synthetic.main.vehicle_item_recylcer.view.*

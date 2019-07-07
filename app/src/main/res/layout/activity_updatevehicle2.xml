@@ -13,7 +13,18 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TableRow
-            android:weightSum="3">
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/titles_style"
+                android:text="@string/title_update_vehicle"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:weightSum="3"
+            android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -25,14 +36,15 @@
                 android:textColor="@color/text_outline"
                 android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/plaque_sh"
+            <EditText
+                android:id="@+id/plaque_up"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:textSize="18dp"
+                android:enabled="false"
                 android:background="@drawable/contour_of_textv"
                 android:layout_weight="2"/>
         </TableRow>
@@ -50,8 +62,8 @@
                 android:textColor="@color/text_outline"
                 android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/brand_sh"
+            <EditText
+                android:id="@+id/brand_up"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
@@ -75,8 +87,8 @@
                 android:textColor="@color/text_outline"
                 android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/model_sh"
+            <EditText
+                android:id="@+id/model_up"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
@@ -100,8 +112,8 @@
                 android:textColor="@color/text_outline"
                 android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/num_of_doors_sh"
+            <EditText
+                android:id="@+id/num_of_doors_up"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
@@ -125,8 +137,8 @@
                 android:textColor="@color/text_outline"
                 android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/type_of_vehicle_sh"
+            <EditText
+                android:id="@+id/type_of_vehicle_up"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
@@ -137,50 +149,16 @@
                 android:layout_weight="2"/>
         </TableRow>
 
-        <TableRow
-            android:weightSum="3">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="10dp"
-                android:text="Mas caracteristicas"
-                android:textSize="18dp"
-                android:textColor="@color/text_outline"
-                android:layout_weight="1"/>
 
-            <ImageView
-                android:layout_width="0dp"
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/ic_arrow_forward"
-                android:layout_gravity="center_vertical"
+                android:text="@string/update_btn_title"
                 android:background="@drawable/contour_of_textv"
-                android:onClick="additionalFeatures"
-                android:layout_weight="2"/>
-        </TableRow>
-
-        <TableRow
-            android:layout_marginTop="10dp"
-            android:weightSum="2">
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/ic_update"
-                android:onClick="updateVehicle"
-                android:layout_weight="1"/>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/ic_delete"
-                android:onClick="deleteVehicle"
-                android:layout_weight="1"/>
+                android:onClick="updateVehi"/>
         </TableRow>
 
 

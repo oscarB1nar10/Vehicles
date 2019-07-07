@@ -19,13 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VehicleDriver" />
-        <activity android:name=".ShowVehicle" />
-        <activity android:name=".UpdateVehicle" />
-        <activity android:name=".VehicleFeatures" />
-        <activity android:name=".ShowVehicleFeatures" />
-        <activity android:name=".VehiclesList"/>
+        <activity android:name="com.example.diannaliset.vehicles.activities.a.vehicleFeatures.VehicleFeatures" />
+        <activity android:name=".activities.a.showVehicleFeatures.ShowVehicleFeatures" />
         <activity android:name=".activities.a.showVehicle.ShowVehicle2"/>
+        <activity android:name=".activities.a.updateVehicle2.UpdateVehicle2"/>
+        <activity android:name=".activities.a.registerVehicle.RegisterVehicle"/>
     </application>
 
 </manifest>

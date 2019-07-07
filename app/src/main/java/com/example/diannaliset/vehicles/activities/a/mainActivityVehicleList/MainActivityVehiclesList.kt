@@ -11,9 +11,9 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.diannaliset.vehicles.R
-import com.example.diannaliset.vehicles.VehicleDriver
 import com.example.diannaliset.vehicles.activities.a.mainActivityVehicleList.model.VehicleDataClass
 import com.example.diannaliset.vehicles.activities.a.mainActivityVehicleList.viewModel.VehiclesListViewModel
+import com.example.diannaliset.vehicles.activities.a.registerVehicle.RegisterVehicle
 import com.example.diannaliset.vehicles.adapters.RecyclerViewVehiclesListAdapter
 import com.example.diannaliset.vehicles.base.BaseActivity
 import com.example.diannaliset.vehicles.handlerDBR.SyncUpWhitRemoteDBR
@@ -62,7 +62,7 @@ class MainActivityVehiclesList : BaseActivity(R.layout.activity_main_vehicles_li
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_settings1 -> {
-                val intent = Intent(this, VehicleDriver::class.java)
+                val intent = Intent(this, RegisterVehicle::class.java)
                 startActivity(intent)
             }
             R.id.sync_up_db_vehicles -> Thread(Runnable {

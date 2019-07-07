@@ -1,4 +1,4 @@
-package com.example.diannaliset.vehicles;
+package com.example.diannaliset.vehicles.activities.a.showVehicleFeatures;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
+import com.example.diannaliset.vehicles.R;
 import com.example.diannaliset.vehicles.handlerDB.Vehicle;
 
 public class ShowVehicleFeatures extends Activity {

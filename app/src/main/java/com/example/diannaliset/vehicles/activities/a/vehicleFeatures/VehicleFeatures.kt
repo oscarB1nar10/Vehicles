@@ -1,4 +1,4 @@
-package com.example.diannaliset.vehicles
+package com.example.diannaliset.vehicles.activities.a.vehicleFeatures
 
 import android.app.Application
 import android.content.Intent
@@ -15,6 +15,7 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import com.example.diannaliset.vehicles.R
 import com.example.diannaliset.vehicles.activities.a.mainActivityVehicleList.MainActivityVehiclesList
 import com.example.diannaliset.vehicles.activities.a.mainActivityVehicleList.model.VehicleDataClass
 import com.example.diannaliset.vehicles.activities.a.mainActivityVehicleList.viewModel.VehiclesListViewModel
@@ -26,9 +27,6 @@ class VehicleFeatures : AppCompatActivity() {
     private var linearLayout: LinearLayout? = null
     lateinit var canvas: Canvas
     lateinit var vehicle: Vehicle
-    internal var spinnerTire: Spinner? = null
-    internal var spinnerCapo: Spinner? = null
-    internal var spinnerDoor: Spinner? = null
     lateinit var model: VehiclesListViewModel
     var colorTire = Color.BLUE
     var colorCapo = Color.BLUE

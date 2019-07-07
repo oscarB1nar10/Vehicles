@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:weightSum="4"
-    tools:context=".VehicleFeatures">
+    tools:context=".activities.a.vehicleFeatures.VehicleFeatures">
 
         <LinearLayout
             android:id="@+id/cavas_view"

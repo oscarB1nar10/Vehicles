@@ -13,5 +13,8 @@
     <string name="model">Modelo</string>
     <string name="number_of_doors">Numero puertas</string>
     <string name="type_of_vehicle">Tipo Vehiculo</string>
+    //UpdateVehicle2
+    <string name="title_update_vehicle">SELECCIONE Y EDITE</string>
+    <string name="update_btn_title">ACTUALIZAR</string>
 
 </resources>
